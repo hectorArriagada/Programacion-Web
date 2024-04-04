@@ -13,6 +13,7 @@ ul {
   
   li:last-child {
     border-right: none;
+    float:right;
   }
   
   li a {
