@@ -1,3 +1,7 @@
 #logo {
   border-radius: 80%;
 }
+
+.activo {
+  background-color: darkblue;
+}
