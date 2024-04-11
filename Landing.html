@@ -11,6 +11,28 @@
     </head>
     <body>
       <header>
+        <!-- Diseño del carrito (si funciona no tocar.)-->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Tus productos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Aqui encontraras todos los productos de tu carrito de compras en donde tendras la opcion de pagar o seguir comprando 
+          </div>
+          <div class="dropdown mt-3">
+             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Opciones de mi compra  
+            </button>
+             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pagar</a></li>
+              <li><a class="dropdown-item" href="#">Seguir con mi compra</a></li>
+              <li><a class="dropdown-item" href="#">Ofertas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
         <!-- Barra de navegación-->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-5">
           <div class="container-fluid">
@@ -41,8 +63,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="Mapa.html">Mapa</a>
                 </li>
-              </ul>
-            </div>
+                
+                <!-- Carrito de compras-->
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                Carrito
+              </a>  
+         </ul>
+        </div>
           
             <!-- Perfil -->
             <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
