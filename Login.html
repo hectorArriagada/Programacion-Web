@@ -6,6 +6,7 @@
       <title>Login</title>
       <link rel="stylesheet" href="css/Login.css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="js/Login.js"></script>
 
   </head>
   <body>
@@ -66,21 +67,28 @@
         <h2 class="text-center">Ingrese sus datos</h2>
 
         <!-- Inicio formulario -->
-        <form class="mb-5 w-50 mx-auto">
-          <div class="mb-3 mt-3 w-50">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Ingrese email" name="email">
+        <form action="" method="POST" class="mb-5 w-50 mx-auto">
+          <div class="form-floating mb-3 mt-3 w-50">
+            <input type="email" class="form-control" id="username" placeholder="Ingrese email" name="username">
+            <label for="username" id="username" name="username">Email:</label>
           </div>
-          <div class="mb-3 w-50">
-            <label for="pwd">Contraseña:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Ingrese Contraseña" name="pswd">
+          <div class="form-floating mb-3 w-50">
+
+            <input type="password" class="form-control" id="pass" placeholder="Ingrese Contraseña" name="pass">
+            <label for="pass" id="pass" name="pass">Contraseña:</label>
           </div>
           <div class="form-check mb-3">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" name="remember"> Recordarme
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">Ingresar
+          <div class="mb-3" id="recpass">
+              Recuperar Contraseña?
+          </div>
+          <div class="mb-3">
+            No tienes cuenta? <a href="#">Registrate</a>
+        </div>
+          <button type="submit" onclick="validar()" class="btn btn-primary">Ingresar </button>
         </form>
       </div>
     </main>

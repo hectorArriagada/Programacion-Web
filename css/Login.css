@@ -5,3 +5,7 @@
 .activo {
   background-color: darkblue;
 }
+
+#recpass:hover {
+  text-decoration: underline;
+}
