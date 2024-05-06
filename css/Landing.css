@@ -3,5 +3,6 @@
   }
   
   .activo {
-    background-color: darkblue;
+    background-color: rgba(117, 188, 221, 0.281);
+    border-radius: 10px
   }
