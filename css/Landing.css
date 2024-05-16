@@ -1,3 +1,16 @@
+#logo {
+  border-radius: 80%;
+}
+
+.activo {
+  background-color: rgba(117, 188, 221, 0.281);
+  border-radius: 10px
+}
+
+#recpass:hover {
+  text-decoration: underline;
+}
+
 /* Reset del navegador */
 * {
   margin: 0;
@@ -27,27 +40,18 @@ html {
 }
 
 .loader {
-  position: relative;
+  position: center;
   width: 60px;
   height: 60px;
 }
 
-.loader .loader_1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 4px solid orange;
-  border-left-color: transparent;
-  border-bottom: none;
-  border-radius: 50%;
-  animation: loader-1 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
-}
+
 
 .loader .loader_2 {
   position: absolute;
   width: 40px;
   height: 40px;
-  border: 4px solid green;
+  border: 4px solid rgb(0, 2, 128);
   border-top-color: transparent;
   border-right: none;
   border-radius: 50%;
@@ -60,14 +64,6 @@ html {
   display: flex;
 }
 
-@keyframes loader-1 {
-  0%{
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @keyframes loader-2 {
   0%{
@@ -77,3 +73,5 @@ html {
     transform: rotate(-360deg);
   }
 }
+
+
